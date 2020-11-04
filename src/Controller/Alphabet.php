@@ -42,7 +42,8 @@ class Alphabet
                 }
             }
         }
-        return $template->create('alphabet.html.php', [
+        return $template->create('index.html.php', [
+            'body' => 'alphabet.html.php',
             'text' => $text,
             'alphabet' => $alphabet,
         ]);
