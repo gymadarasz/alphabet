@@ -1,16 +1,36 @@
 <!-- TODO styleing and full page html -->
-<h1>Alphabet</h1>
+
+<div class="row">
+    <div class="col text-center">
+        <h1>Alphabet</h1>
+    </div>
+</div>
 <?php echo isset($this) ? $this->create('messages.html.php', $this->data) : ''; ?>
+
 <form method="GET">
-    Text:<br>
-    <textarea name="text" placeholder="Type something to encode to alphabet..."><?php if ($text ?? false) { ?><?php echo $text ?? ''; ?><?php } ?></textarea>
-    <input type="submit">
+    <div class="form-group">
+        <label for="text">Text:</label>
+        <textarea class="form-control" id="text" rows="3" name="text" placeholder="Type something to encode to alphabet..."><?php if ($text ?? false) { ?><?php echo $text ?? ''; ?><?php } ?></textarea>
+    </div>
+
+    <div class="row">
+        <div class="col text-center">
+            <input class="btn btn-primary" type="submit" value="Submit">
+        </div>
+    </div>
 </form>
 
 <form method="GET">
-    Alphabet:<br>
-    <textarea name="alphabet" placeholder="Type something to decode to text..."><?php if ($alphabet ?? false) { ?><?php echo $alphabet ?? ''; ?><?php } ?></textarea>
-    <input type="submit">
+    <div class="form-group">
+        <label for="alphabet">Alphabet:</label>
+        <textarea class="form-control" id="alphabet" rows="3" name="alphabet" placeholder="Type something to decode to text..."><?php if ($alphabet ?? false) { ?><?php echo $alphabet ?? ''; ?><?php } ?></textarea>
+    </div>
+
+    <div class="row">
+        <div class="col text-center">
+            <input class="btn btn-primary" type="submit" value="Submit">
+        </div>
+    </div>
 </form>
 
 <!-- TODO latest alphabets-->
