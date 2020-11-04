@@ -1,0 +1,33 @@
+{
+    "name": "gymadarasz/alphabet",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Gyula Madarasz",
+            "email": "gyula.madarasz@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "GyMadarasz\\Alphabet\\": "src",
+            "GyMadarasz\\Alphabet\\Test\\": "tests"
+        }
+    },
+    "repositories": [
+        {
+            "type": "path",
+            "url": "../webapp",
+            "options": {
+                "symlink": true
+            }
+        }
+    ],
+    "require": {
+        "gymadarasz/webapp": "dev-master"
+    },
+    "require-dev": {
+        "guzzlehttp/guzzle": "^7.2",
+        "phpstan/phpstan": "^0.12.52",
+        "friendsofphp/php-cs-fixer": "^2.16"
+    }
+}
