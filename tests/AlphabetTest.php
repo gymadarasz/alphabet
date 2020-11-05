@@ -23,5 +23,11 @@ class AlphabetTest extends AppTest
 
         $contents = $this->httpGet('?alphabet=9+12%2F15%2F22%2F5+25%2F15%2F21+20%2F15%2F15');
         $this->tester->assertContains('I LOVE YOU TOO', $contents);
+
+        $contents = $this->httpGet('?alphabet=9+10%2F21%2F19%2F20+23%2F1%2F14%2F20%2F5%2F4+25%2F15%2F21+20%2F15+11%2F14%2F15%2F23+20%2F8%2F1%2F20+9+1%2F13+7%2F12%2F1%2F4+20%2F8%2F1%2F20+9+13%2F5%2F20+1+16%2F5%2F18%2F19%2F15%2F14+12%2F9%2F11%2F5+25%2F15%2F21');
+        $this->tester->assertContains('I JUST WANTED YOU TO KNOW THAT I AM GLAD THAT I MET A PERSON LIKE YOU', $contents);
+
+        $contents = $this->httpGet('?alphabet=9+1%2F13+7%2F15%2F15%2F4%2C+20%2F8%2F1%2F14%2F11+25%2F15%2F21+%3A%29+8%2F15%2F23+23%2F1%2F19+25%2F15%2F21%2F18+19%2F12%2F5%2F5%2F16%3F');
+        $this->tester->assertContains('I AM GOOD, THANK YOU :) HOW WAS YOUR SLEEP?', $contents);
     }
 }
