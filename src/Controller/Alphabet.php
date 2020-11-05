@@ -28,6 +28,7 @@ class Alphabet
                     $alphabet .= $inp;
                 }
             }
+            $text = '';
         } else {
             $alphabet = strtoupper((string)$globals->getGet('alphabet'));
             if ($alphabet && preg_match_all('/\b([1-2]{0,1}[0-9]\/)*[1-2]{0,1}[0-9]\b/', $alphabet, $matches)) {
@@ -54,6 +55,7 @@ class Alphabet
                     $text = str_replace($replace[0], $replace[1], $text);
                 }
             }
+            $alphabet = '';
         }
         return $template->create('index.html.php', [
             'body' => 'alphabet.html.php',
