@@ -6,6 +6,7 @@
         <h1>Alphabet</h1>
         <p>
             Send and decode your secret message with this Alphabet message converter.<br>
+            <br>
             <strong>What is alphabet?</strong></br>
             An alphabet is a standardized set of basic written symbols or graphemes (called letters) that represent the phonemes of certain spoken languages.<br>
             (Wikipedia)<br> 
@@ -58,8 +59,8 @@
                 <td><strong>D</strong></td>
                 <td><strong>E</strong></td>
                 <td><strong>F</strong></td>
-                <td><strong>H</strong></td>
                 <td><strong>G</strong></td>
+                <td><strong>H</strong></td>
                 <td><strong>I</strong></td>
                 <td>J</td>
             </tr>

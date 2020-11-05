@@ -27,6 +27,21 @@
         <!-- Go to www.addthis.com/dashboard to customize your tools -->
         <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5fa3ec8f7b2fa46e"></script>
 
+        <style>
+            * {color: white;}
+            body {
+                background: #444444;
+                background: -moz-radial-gradient(center, #444444 0%, #333333 100%, #888888 100%);
+                background: -webkit-radial-gradient(center, #444444 0%, #333333 100%, #888888 100%);
+                background: radial-gradient(ellipse at center, #444444 0%, #333333 100%, #888888 100%);
+            }
+            img {
+                border-radius: 0.3em;
+            }
+            p {
+                text-align: justify;
+            }
+        </style>
     </head>
     <body>
         <div class="container">
