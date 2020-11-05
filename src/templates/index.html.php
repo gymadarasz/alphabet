@@ -13,9 +13,6 @@
         
     </head>
     <body>
-        <div id="fb-root"></div>
-        <script async defer crossorigin="anonymous" src="https://connect.facebook.net/hu_HU/sdk.js#xfbml=1&version=v8.0" nonce="9ToOwCBy"></script>
-
         <div class="container">
             <?php echo isset($this) && isset($body) ? $this->create($body, $this->data) : ''; ?>
         </div>

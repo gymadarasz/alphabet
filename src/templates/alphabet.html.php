@@ -3,7 +3,9 @@
 <div class="row">
     <div class="col text-center">
         <h1>Alphabet</h1>
-        <div class="fb-share-button" data-href="http://165.232.104.128/alphabet" data-layout="button" data-size="large"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2F165.232.104.128%2Falphabet&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Share</a></div>
+        <a href="https://www.facebook.com/sharer/sharer.php?u=example.org" target="_blank">
+            <img src="/alphabet/src/templates/fb-share.png">
+        </a>
     </div>
 </div>
 <?php echo isset($this) ? $this->create('messages.html.php', $this->data) : ''; ?>
