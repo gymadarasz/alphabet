@@ -19,9 +19,5 @@
         <div class="container">
             <?php echo isset($this) && isset($body) ? $this->create($body, $this->data) : ''; ?>
         </div>
-        
-        <div class="container">
-            <div class="fb-share-button" data-href="http://165.232.104.128/alphabet" data-layout="button" data-size="large"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2F165.232.104.128%2Falphabet&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Megosztás</a></div>
-        </div>
     </body>
 </html>
