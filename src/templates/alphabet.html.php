@@ -3,11 +3,18 @@
 <div class="row">
     <div class="col text-center">
         <h1>Alphabet</h1>
+        <p>
+            Send and decode your secret message with this Alphabet message converter.<br>
+            <strong>What is alphabet?</strong></br>
+            An alphabet is a standardized set of basic written symbols or graphemes (called letters) that represent the phonemes of certain spoken languages.<br>
+            (Wikipedia)<br> 
+        </p>
         <a href="https://www.facebook.com/sharer/sharer.php?u=165.232.104.128/alphabet/" target="_blank">
             <img src="/alphabet/src/templates/fb-share.png">
         </a>
     </div>
 </div>
+
 <?php echo isset($this) ? $this->create('messages.html.php', $this->data) : ''; ?>
 
 <form method="GET">
@@ -37,5 +44,11 @@
 </form>
 
 
+<div class="row">
+    <div class="col text-center">
+        If you are not sure how it works here is a hint:<br>
+        <img style="max-width:90%" src="https://i.pinimg.com/736x/94/ba/9d/94ba9d2ec86d4047ff20bda7d11e32dd.jpg">
+    </div>
+</div>
 
 <!-- TODO latest alphabets-->
