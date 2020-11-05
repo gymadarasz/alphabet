@@ -3,7 +3,7 @@
 <div class="row">
     <div class="col text-center">
         <h1>Alphabet</h1>
-        <a href="https://www.facebook.com/sharer/sharer.php?u=example.org" target="_blank">
+        <a href="https://www.facebook.com/sharer/sharer.php?u=165.232.104.128/alphabet/" target="_blank">
             <img src="/alphabet/src/templates/fb-share.png">
         </a>
     </div>
