@@ -15,7 +15,7 @@
 
     <div class="row">
         <div class="col text-center">
-            <input class="btn btn-primary" type="submit" value="Submit">
+            <input class="btn btn-primary" type="submit" value="Encode">
         </div>
     </div>
 </form>
@@ -28,9 +28,11 @@
 
     <div class="row">
         <div class="col text-center">
-            <input class="btn btn-primary" type="submit" value="Submit">
+            <input class="btn btn-primary" type="submit" value="Decode">
         </div>
     </div>
 </form>
+
+
 
 <!-- TODO latest alphabets-->
