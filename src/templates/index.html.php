@@ -58,7 +58,7 @@
     </head>
     <body>
         <div class="container">
-            <?php echo isset($this) && isset($body) ? $this->create($body, $this->data) : ''; ?>
+            {{ isset($this) && isset($body) ? $this->create($body, $this->data) : ''; }}
         </div>
     </body>
 </html>
