@@ -41,6 +41,19 @@
             p {
                 text-align: justify;
             }
+            .table {
+                font-size: 0.6em;
+            }
+            .hint-cell {
+                float: left;
+                width: 2em;
+                padding: 0.4em;
+                border: 1px solid darkgray;
+                margin: 0.1em;
+            }
+            .hint-cell strong {
+                display: block;
+            }
         </style>
     </head>
     <body>
