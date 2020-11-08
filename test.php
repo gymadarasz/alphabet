@@ -1,14 +1,13 @@
 <?php declare(strict_types = 1);
 
-use GyMadarasz\WebApp\Service\Invoker;
-use GyMadarasz\WebApp\Service\Logger;
-use GyMadarasz\WebApp\Service\Config;
-use GyMadarasz\WebApp\Service\Mysql;
-use GyMadarasz\Test\Test;
-use GyMadarasz\Test\Tester;
-use GyMadarasz\Test\AppTest;
 use GuzzleHttp\Client;
 use GyMadarasz\Alphabet\Test\AlphabetTest;
+use GyMadarasz\Test\Assertor;
+use GyMadarasz\Test\Inspector;
+use GyMadarasz\Test\Tester;
+use GyMadarasz\WebApp\Service\Config;
+use GyMadarasz\WebApp\Service\Invoker;
+use GyMadarasz\WebApp\Service\Logger;
 
 include __DIR__ . '/vendor/autoload.php';
 
@@ -26,18 +25,21 @@ error_reporting(E_ALL | E_STRICT);
 
 
 ($config = new Config())->setExtPath(__DIR__ . '/src/config');
-$client = new Client([
-    'base_uri' => $config->get('baseUrl'), 
-    'cookies' => true,
-]);
 
-return (new Tester())->test(
+$errors = (new Tester())->test(
     new Invoker(),
     $config,
-    $logger = new Logger($config),
-    $client, 
+    new Logger($config),
+    new Assertor(),
+    new Inspector(),
+    new Client([
+        'base_uri' => $config->get('baseUrl'), 
+        'cookies' => true,
+    ]), 
     [
         // new AppTest($config, $logger, $mysql),
         AlphabetTest::class,
     ]
 )->stat();
+
+exit($errors ? 1 : 0);
